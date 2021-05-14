@@ -1,0 +1,110 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+@font-face {
+  font-family: Eczar-Bold;
+  src: url("../../fonts/Eczar/Eczar-Bold.ttf"); }
+@font-face {
+  font-family: Eczar-ExtraBold;
+  src: url("../../fonts/Eczar/Eczar-ExtraBold.ttf"); }
+@font-face {
+  font-family: Eczar-Medium;
+  src: url("../../fonts/Eczar/Eczar-Medium.ttf"); }
+@font-face {
+  font-family: Eczar-Regular;
+  src: url("../../fonts/Eczar/Eczar-Regular.ttf"); }
+@font-face {
+  font-family: Eczar-SemiBold;
+  src: url("../../fonts/Eczar/Eczar-SemiBold.ttf"); }
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf"); }
+@font-face {
+  font-family: Poppins-Light;
+  src: url("../../fonts/Poppins/Poppins-Light.ttf"); }
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf"); }
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../../fonts/Poppins/Poppins-SemiBold.ttf"); }
+@font-face {
+  font-family: RobotoMono-Bold;
+  src: url("../../fonts/RobotoMono/RobotoMono-Bold.ttf"); }
+@font-face {
+  font-family: RobotoMono-BoldItalic;
+  src: url("../../fonts/RobotoMono/RobotoMono-BoldItalic.ttf"); }
+@font-face {
+  font-family: RobotoMono-Italic;
+  src: url("../../fonts/RobotoMono/RobotoMono-Italic.ttf"); }
+@font-face {
+  font-family: RobotoMono-Light;
+  src: url("../../fonts/RobotoMono/RobotoMono-Light.ttf"); }
+@font-face {
+  font-family: RobotoMono-LightItalic;
+  src: url("../../fonts/RobotoMono/RobotoMono-LightItalic.ttf"); }
+@font-face {
+  font-family: RobotoMono-Medium;
+  src: url("../../fonts/RobotoMono/RobotoMono-Medium.ttf"); }
+@font-face {
+  font-family: RobotoMono-MediumItalic;
+  src: url("../../fonts/RobotoMono/RobotoMono-MediumItalic.ttf"); }
+@font-face {
+  font-family: RobotoMono-Regular;
+  src: url("../../fonts/RobotoMono/RobotoMono-Regular.ttf"); }
+@font-face {
+  font-family: RobotoMono-Thin;
+  src: url("../../fonts/RobotoMono/RobotoMono-Thin.ttf"); }
+@font-face {
+  font-family: RobotoMono-ThinItalic;
+  src: url("../../fonts/RobotoMono/RobotoMono-ThinItalic.ttf"); }
+/*//////////////////////////////////////////////////////////////////
+[ COMMON ]*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'RobotoMono-Regular', 'Poppins-Regular', sans-serif;
+  font-size: 12px;
+  line-height: 1.43;
+  color: #1E252C;
+  background-color: #fff;
+  scroll-behavior: smooth; }
+
+ul,
+li {
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: white; }
+  header .contact,
+  header .hambuger {
+    width: 50px;
+    cursor: pointer; }
+  header .logo {
+    width: 150px; }
+
+footer {
+  padding: 15px 0;
+  text-align: center;
+  background: #EAEAE9; }
+
+/*# sourceMappingURL=index.css.map */

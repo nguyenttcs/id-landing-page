@@ -1,0 +1,48 @@
+@import './Helpers/variables';
+@import './Helpers/mixin';
+
+@import './Base/fonts';
+@import './Base/reset';
+
+@import './Components/button';
+
+@import './Layouts/header';
+@import './Layouts/footer';
+@import './Base/customize';
+
+
+
+// --Base
+//reset.scss
+//customize.scss
+//------
+
+//--Helpers
+//variable.scss
+//Mixin
+//enxtend.scss
+//------
+
+//--Component
+//button
+//input
+//link
+//------
+
+// --Layouts
+//header
+//footer
+//carousel
+// -----
+
+// --Page : Dung cho Web nhieu pages
+//Home
+//Contact
+
+// ------
+
+// --Theme
+
+// --Vendor (assets)
+//Library
+// ------
