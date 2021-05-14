@@ -1,0 +1,86 @@
+/* ==========================================================================
+Icons Style
+========================================================================== */
+.social-icon {
+	a {
+		padding-right: 10px;
+
+		svg {
+			transition: 1s;
+		}
+
+		&:hover svg {
+			color: $color-orange-0;
+		}
+	}
+}
+
+.scroll-icon {
+	position: absolute;
+	left: 49%;
+	bottom: 50px;
+	animation: icon-move 2s alternate infinite;
+
+	svg {
+		width: 50px;
+		height: 50px;
+		transition: 1s;
+	}
+
+	&:hover svg {
+		color: $color-orange-0;
+	}
+
+	&.on-bg-light {
+		color: $color-dark-0;
+	}
+}
+
+.icon-arrow {
+	display: inline-block;
+	width: 60px;
+}
+
+/* ==========================================================================
+Menu
+========================================================================== */
+.menu {
+	a {
+		@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+
+		transition: 1s;
+
+		&:hover {
+			color: $color-orange-0;
+		}
+	}
+
+	.line {
+		display: inline-block;
+		width: 50px;
+		height: 1px;
+		background: $color-light-0;
+		margin: 5px 0;
+	}
+
+	&.on-bg-light {
+		.line {
+			background: $color-dark-0;
+		}
+	}
+}
+
+.only-menu-left {
+	@include d-flex(row, flex-end, unset);
+}
+
+/* ==========================================================================
+Stamp Project for Study
+========================================================================== */
+.stamp {
+	@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+	transform: rotate(-90deg);
+	position: absolute;
+	left: 0;
+	top: 50%;
+}

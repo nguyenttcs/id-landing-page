@@ -1,0 +1,49 @@
+.magazines-posters {
+	@include section-style($color-dark-0, $color-light-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+
+	.design-list {
+		ul {
+			@include d-flex(row, space-around, center);
+
+			li {
+				width: 30%;
+
+				&:hover {
+					.des {
+						color: $color-orange-0;
+
+						hr {
+							opacity: 1;
+							visibility: visible;
+							animation: increase-width 1s linear 1;
+						}
+					}
+				}
+
+				.des {
+					text-align: center;
+					padding: 20px 0;
+					@include text-style('Poppins-SemiBold', 26px, 38px, 0.5px, unset);
+					transition: 1s;
+
+					.icon-arrow {
+						margin-left: 30px;
+					}
+
+					hr {
+						width: 50%;
+						height: 1px;
+						background: $color-light-0;
+						margin: 10px auto;
+						opacity: 0;
+						visibility: hidden;
+						transition: 1s;
+					}
+				}
+
+			}
+		}
+	}
+}

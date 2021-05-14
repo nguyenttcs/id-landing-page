@@ -1,0 +1,64 @@
+.project-list {
+	@include section-style($color-light-0, $color-dark-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+
+	.table-of-content {
+		@include d-flex(row, space-between, center);
+
+		.left {
+			width: 50%;
+			margin-left: 15%;
+
+			h6 {
+				@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+				opacity: 0.3;
+			}
+
+			h3 {
+				@include text-style('Eczar-SemiBold', $fs-52, unset, unset, unset);
+				transition: 1s;
+
+				&:hover {
+					color: white;
+					-webkit-text-fill-color: white;
+					-webkit-text-stroke-width: 1px;
+					-webkit-text-stroke-color: $color-dark-0;
+					animation: zoom-in-text 2s alternate infinite;
+				}
+			}
+
+			ul {
+				li {
+					padding: 20px 0;
+
+					a {
+						display: flex;
+						align-items: flex-start;
+					}
+				}
+			}
+
+
+			.number {
+				display: inline-block;
+				@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+				transform: rotate(-90deg);
+				position: relative;
+				top: 15px;
+				margin-right: 20px;
+			}
+		}
+
+		.right {
+			width: 50%;
+			margin-right: -$pd-60;
+
+			img {
+				&:hover {
+					animation: image-zoom 2s linear 1;
+				}
+			}
+		}
+	}
+}

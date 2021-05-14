@@ -1,20 +1,27 @@
+@mixin d-flex($flex-direction, $justify-content, $align-items) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-direction: $flex-direction;
+}
 
-// @mixin text($color, $fs, $fw) {
-//     color: $color;
-//     font-size: $fs;
-//     font-weight: $fw;
-// }
-// @mixin button($color, $bg-color, $fw, $pd-top-bottom, $pd-left-right, $color-border, $color-hover, $bg-color-hover) {
-//     color: $color;
-//     background-color: $bg-color;
-//     font-weight: $fw;
-//     padding: $pd-top-bottom $pd-left-right !important;
-//     border: 1px solid $color-border;
-//     &:hover{
-//         color: $color-hover;
-//         background-color: $bg-color-hover;
-//     }   
-// }
+@mixin section-style($bg, $color-text, $pd) {
+	width: 100%;
+	height: 100vh;
+	padding: $pd;
+	background: $bg;
+	color: $color-text;
+}
+
+@mixin text-style($f-family, $fs, $lh, $lp, $tt) {
+	font-family: $f-family;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $lp;
+	text-transform: $tt;
+}
+
+
 // @mixin respond-to($breakpoint) {
 //     @if map-has-key($map: $breakpoints, $key: $breakpoint){
 //         $value: map-get($map: $breakpoints, $key: $breakpoint);

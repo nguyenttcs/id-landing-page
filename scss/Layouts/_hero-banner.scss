@@ -1,0 +1,41 @@
+.hero-banner {
+	@include section-style($color-dark-0, $color-light-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+
+	.banner-content {
+		@include d-flex(row, space-between, unset);
+
+		.left {
+			width: 60%;
+			@include d-flex(column, center, center);
+		}
+
+		.right {
+			width: 38%;
+			transition: 2s;
+			float: right;
+
+			&:hover img{
+				transform: scale(0.9);
+			}
+		}
+	}
+
+	.heading-2 {
+		font-family: 'Eczar-Bold';
+		font-size: 80px;
+		line-height: 80px;
+	}
+
+	.body-text {
+		@include text-style('RobotoMono-Regular', 18px, 32px, unset, unset);
+		margin-left: 100px;
+		margin-top: 50px;
+	}
+
+	.banner-bottom {
+		@include d-flex(row, space-between, center);
+		padding-top: 30px;
+	}
+}

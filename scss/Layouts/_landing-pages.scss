@@ -1,0 +1,5 @@
+.landing-pages {
+	@include section-style($color-light-0, $color-dark-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+}
