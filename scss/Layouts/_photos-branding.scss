@@ -2,6 +2,8 @@
 	@include section-style($color-dark-0, $color-light-0, $pd-60);
 	@include d-flex(column, space-between, unset);
 	position: relative;
+	overflow: hidden;
+
 
 	.photo-slide {
 		// width: 70%;
@@ -49,7 +51,6 @@
 	}
 
 	.title {
-
 		h2 {
 			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
 			position: absolute;

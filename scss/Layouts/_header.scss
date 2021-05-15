@@ -1,5 +1,6 @@
 header {
 	@include d-flex(row, space-between, center);
+	z-index: 2;
 	
 
 	h6 {

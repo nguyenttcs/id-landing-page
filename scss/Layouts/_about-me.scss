@@ -1,0 +1,47 @@
+.about-me {
+	@include section-style($color-light-0, $color-dark-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+
+	.bg-grey {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 50%;
+		background: $color-grey-0;
+		z-index: 0;
+	}
+
+	.content {
+		@include d-flex(row, space-between, center);
+		z-index: 2;
+
+		.left {
+			margin: 0 auto;
+			text-align: left;
+
+			h6 {
+				transform: rotate(-90deg);
+			}
+
+			.social-icon {
+				text-align: right;
+				padding: 20px 0;
+
+				a {
+					&:last-child{
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		.right {
+			width: 50%;
+			@include text-style('RobotoMono-Regular', 14px, 28px, unset, unset);
+			color: #4A4A4A;
+			padding: 100px 100px 100px 200px;
+		}
+	}
+}

@@ -116,7 +116,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row; }
+  flex-direction: row;
+  z-index: 2; }
   header h6 {
     font-family: 'Poppins-Regular';
     font-size: 12px;
@@ -365,7 +366,8 @@ header {
   justify-content: space-between;
   align-items: unset;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .photos-branding .photo-slide {
     display: flex;
     margin: 0 auto;
@@ -428,6 +430,110 @@ header {
       top: 50%;
       right: 0;
       transform: translate(20%, -50%); }
+
+.services {
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  background: #1E252C;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: column;
+  position: relative; }
+  .services .content {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    .services .content .left {
+      width: 40%;
+      margin: 0 auto; }
+      .services .content .left img {
+        width: 70%; }
+    .services .content .center {
+      width: 50%;
+      margin-left: -15%; }
+      .services .content .center .title {
+        font-family: "Eczar-Bold";
+        font-size: 120px;
+        line-height: 105px;
+        letter-spacing: unset;
+        text-transform: unset;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff; }
+      .services .content .center .position {
+        margin-left: 100px;
+        margin-top: 10%; }
+        .services .content .center .position h5 {
+          font-family: "Poppins-SemiBold";
+          font-size: 26px;
+          line-height: 38px;
+          letter-spacing: 0.5px;
+          text-transform: unset;
+          padding: 10px 0; }
+        .services .content .center .position p {
+          font-family: "RobotoMono-Regular";
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: unset;
+          text-transform: unset; }
+    .services .content .right .social-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: unset;
+      flex-direction: column; }
+      .services .content .right .social-icon a {
+        padding: 10px 0; }
+
+.about-me {
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  background: #fff;
+  color: #1E252C;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: column;
+  position: relative; }
+  .about-me .bg-grey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background: #F0F0F0;
+    z-index: 0; }
+  .about-me .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2; }
+    .about-me .content .left {
+      margin: 0 auto;
+      text-align: left; }
+      .about-me .content .left h6 {
+        transform: rotate(-90deg); }
+      .about-me .content .left .social-icon {
+        text-align: right;
+        padding: 20px 0; }
+        .about-me .content .left .social-icon a:last-child {
+          padding-right: 0; }
+    .about-me .content .right {
+      width: 50%;
+      font-family: "RobotoMono-Regular";
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: unset;
+      text-transform: unset;
+      color: #4A4A4A;
+      padding: 100px 100px 100px 200px; }
 
 footer {
   padding: 15px 0;
@@ -518,5 +624,42 @@ Stamp Project for Study
   .stamp.end {
     top: unset;
     bottom: 15%; }
+
+/* ==========================================================================
+Subcribe
+========================================================================== */
+.subscribe {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .subscribe h3 {
+    font-family: "Eczar-Bold";
+    font-size: 80px;
+    line-height: 142px;
+    letter-spacing: unset;
+    text-transform: unset; }
+    .subscribe h3 span {
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #1E252C; }
+  .subscribe .btn-subscribe {
+    background: transparent;
+    border: solid 1px #1E252C;
+    padding: 15px 50px;
+    margin: 0 20px;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 1s; }
+    .subscribe .btn-subscribe:hover {
+      background: #1E252C;
+      color: #fff; }
+    .subscribe .btn-subscribe:focus {
+      outline: none; }
 
 /*# sourceMappingURL=index.css.map */
