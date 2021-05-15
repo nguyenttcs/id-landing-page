@@ -2,4 +2,55 @@
 	@include section-style($color-light-0, $color-dark-0, $pd-60);
 	@include d-flex(column, space-between, unset);
 	position: relative;
+	overflow: hidden;
+
+	.content {
+		@include d-flex(row, space-between, flex-start);
+
+		.left {
+			width: 50%;
+			margin-left: -$pd-60;
+
+			.des {
+				@include d-flex(row, space-between, center);
+				padding: 20px 0;
+
+				h6 {
+					margin-left: $pd-60;
+				}
+			}
+
+		}
+
+		.right {
+			width: 50%;
+			height: 100%;
+			margin-right: -45%;
+		}
+	}
+
+	.title {
+		position: absolute;
+		text-align: right;
+		top: 35%;
+		left: 40%;
+
+		h2 {
+			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+
+			span {
+				@include text-stroke(transparent, transparent, 1px, $color-dark-0);
+			}
+
+			a {
+				@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+				margin-right: -140px;
+			}
+		}
+
+		.see-more {
+			display: inline-block;
+			border-bottom: 1px solid $color-dark-0;
+		}
+	}
 }

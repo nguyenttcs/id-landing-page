@@ -21,6 +21,13 @@
 	text-transform: $tt;
 }
 
+@mixin text-stroke($color, $tf, $tsw, $tsc) {
+	color: $color;
+	-webkit-text-fill-color: $tf;
+	-webkit-text-stroke-width: $tsw;
+	-webkit-text-stroke-color: $tsc;
+}
+
 
 // @mixin respond-to($breakpoint) {
 //     @if map-has-key($map: $breakpoints, $key: $breakpoint){

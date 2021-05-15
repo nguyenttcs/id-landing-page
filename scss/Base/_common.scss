@@ -38,7 +38,12 @@ Icons Style
 
 .icon-arrow {
 	display: inline-block;
-	width: 60px;
+	width: 60px;	
+}
+
+.icon-arrow-small {
+	display: inline-block;
+	width: 20px;	
 }
 
 /* ==========================================================================
@@ -70,6 +75,18 @@ Menu
 	}
 }
 
+.line {
+	display: inline-block;
+	width: 50px;
+	height: 1px;
+	background: $color-light-0;
+	margin: 5px 0;
+
+	&.on-bg-light {
+		background: $color-dark-0;
+	}
+}
+
 .only-menu-left {
 	@include d-flex(row, flex-end, unset);
 }
@@ -83,4 +100,9 @@ Stamp Project for Study
 	position: absolute;
 	left: 0;
 	top: 50%;
+
+	&.end {
+		top: unset;
+		bottom: 15%;	
+	}
 }

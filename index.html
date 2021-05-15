@@ -2,251 +2,337 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Iris-Interface Design</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Iris-Interface Design</title>
 
-  <!-- CSS Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <!-- Font Awesome 5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+	<!-- Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 
-  <!-- Feather Icon -->
-  <script src="https://unpkg.com/feather-icons"></script>
+	<!-- Feather Icon -->
+	<script src="https://unpkg.com/feather-icons"></script>
 
-  <!-- Slider -->
-  <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    /> -->
+	<!-- Slider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
 
-  <!-- My Style CSS -->
-  <link rel="stylesheet" href="./css/index.css" />
+	<!-- My Style CSS -->
+	<link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-      <header>
-        <h6>UI Designer</h6>
-        <a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
-        <div class="website">
-          <a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
-        </div>
-      </header>
+	<div class="wrapper">
+		<!-- Hero Banner -->
+		<section class="hero-banner">
+			<header>
+				<h6>UI Designer</h6>
+				<a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
+				<div class="website">
+					<a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
+				</div>
+			</header>
 
-      <div class="banner-content">
-        <div class="left">
-          <h2 class="heading-2">
-            Art is <br />
-            anything you <br />
-            can get away <br />
-            with.
-          </h2>
-          <p class="body-text">
-            “It’s through mistakes that you <br />
-            actually can grow. You have to get bad <br />
-            in order to get good.”
-            <span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
-          </p>
-        </div>
-        <div class="right">
-          <img src="./img/banner-img.png" alt="Banner Image" />
-        </div>
-      </div>
+			<div class="banner-content">
+				<div class="left">
+					<h2 class="heading-2">
+						Art is <br />
+						anything you <br />
+						can get away <br />
+						with.
+					</h2>
+					<p class="body-text">
+						“It’s through mistakes that you <br />
+						actually can grow. You have to get bad <br />
+						in order to get good.”
+						<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
+					</p>
+				</div>
+				<div class="right">
+					<img src="./img/banner-img.png" alt="Banner Image" />
+				</div>
+			</div>
 
-      <div class="banner-bottom">
-        <div class="social-icon">
-          <a href="https://www.facebook.com/nguyentt.cs" target="_blank"><i data-feather="facebook"></i></a>
-          <a href="https://irisnguyen.info" target="_blank"><i data-feather="globe"></i></a>
-          <a href="https://www.behance.net/nguyentrantt" target="_blank"><i data-feather="instagram"></i></a>
-        </div>
+			<div class="banner-bottom">
+				<div class="social-icon">
+					<a href="https://www.facebook.com/nguyentt.cs" target="_blank"><i data-feather="facebook"></i></a>
+					<a href="https://irisnguyen.info" target="_blank"><i data-feather="globe"></i></a>
+					<a href="https://www.behance.net/nguyentrantt" target="_blank"><i data-feather="instagram"></i></a>
+				</div>
 
-        <div class="menu">
-          <a href="#projects">PROJECT</a>
-          <span class="line"></span>
-          <a href="#services">SERVICES</a>
-          <span class="line"></span>
-          <a href="#about-me">ABOUT ME</a>
-        </div>
-      </div>
+				<div class="menu">
+					<a href="#projects">PROJECT</a>
+					<span class="line"></span>
+					<a href="#services">SERVICES</a>
+					<span class="line"></span>
+					<a href="#about-me">ABOUT ME</a>
+				</div>
+			</div>
 
-      <div class="scroll-icon">
-        <a href="#projects"><i data-feather="chevrons-down"></i></a>
-      </div>
-      <span class="stamp">PROJECT FOR STUDY</span>
-    </section>
+			<div class="scroll-icon">
+				<a href="#projects"><i data-feather="chevrons-down"></i></a>
+			</div>
+			<span class="stamp">PROJECT FOR STUDY</span>
+		</section>
 
-    <!-- Project List -->
-    <section id="projects" class="project-list">
-      <header class="header-dark">
-        <h6>UI Designer</h6>
-        <a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
-        <div class="website">
-          <a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
-        </div>
-      </header>
+		<!-- Project List -->
+		<section id="projects" class="project-list">
+			<header class="header-dark">
+				<h6>UI Designer</h6>
+				<a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
+				<div class="website">
+					<a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
+				</div>
+			</header>
 
-      <div class="table-of-content">
-        <div class="left">
-          <h6>My Projects</h6>
-          <ul>
-            <li>
-              <a href="#magazines-posters">
-                <span class="number">01</span>
-                <h3>Magazines</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#magazines-posters">
-                <span class="number">02</span>
-                <h3>Posters</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#landing-pages">
-                <span class="number">03</span>
-                <h3>Landing Pages</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#photos-branding">
-                <span class="number">04</span>
-                <h3>Photos</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#photos-branding">
-                <span class="number">05</span>
-                <h3>Branding</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="right">
-          <a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/products-img.png"
-              alt="Products Image" /></a>
-        </div>
-      </div>
+			<div class="table-of-content">
+				<div class="left">
+					<h6>My Projects</h6>
+					<ul>
+						<li>
+							<a href="#magazines-posters">
+								<span class="number">01</span>
+								<h3>Magazines</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#magazines-posters">
+								<span class="number">02</span>
+								<h3>Posters</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#landing-pages">
+								<span class="number">03</span>
+								<h3>Landing Pages</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#photos-branding">
+								<span class="number">04</span>
+								<h3>Photos</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#photos-branding">
+								<span class="number">05</span>
+								<h3>Branding</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/products-img.png"
+							alt="Products Image" /></a>
+				</div>
+			</div>
 
-      <div class="only-menu-left">
-        <div class="menu on-bg-light">
-          <a href="#projects">PROJECT</a>
-          <span class="line"></span>
-          <a href="#services">SERVICES</a>
-          <span class="line"></span>
-          <a href="#about-me">ABOUT ME</a>
-        </div>
-      </div>
+			<div class="only-menu-left">
+				<div class="menu on-bg-light">
+					<a href="#projects">PROJECT</a>
+					<span class="line"></span>
+					<a href="#services">SERVICES</a>
+					<span class="line"></span>
+					<a href="#about-me">ABOUT ME</a>
+				</div>
+			</div>
 
-      <div class="scroll-icon on-bg-light">
-        <a href="#magazines-posters"><i data-feather="chevrons-down"></i></a>
-      </div>
-      <span class="stamp on-bg-light">PROJECT FOR STUDY</span>
-    </section>
+			<div class="scroll-icon on-bg-light">
+				<a href="#magazines-posters"><i data-feather="chevrons-down"></i></a>
+			</div>
+			<span class="stamp on-bg-light">PROJECT FOR STUDY</span>
+		</section>
 
-    <!-- Magazines, Poster -->
-    <section id="magazines-posters" class="magazines-posters">
-      <header>
-        <h6>UI Designer</h6>
-        <a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
-        <div class="website">
-          <a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
-        </div>
-      </header>
+		<!-- Magazines, Poster -->
+		<section id="magazines-posters" class="magazines-posters">
+			<header>
+				<h6>UI Designer</h6>
+				<a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
+				<div class="website">
+					<a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
+				</div>
+			</header>
 
-      <div class="design-list">
-        <ul>
-          <li>
-            <a href="https://www.behance.net/gallery/107930547/Detective-Conan-use-Low-Poly" target="_blank">
-              <img src="./img/magazine-img.png" alt="Conan Low Poly" />
-              <div class="des">
-                Mangazines<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
-                <hr />
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/gallery/114571041/Heath-Magazine-Cover-2021" target="_blank"><img
-                src="./img/poster-img.png" alt="Health Poster" />
-              <div class="des">
-                Posters<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
-                <hr />
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/photo-unplash.png"
-                alt="Photo Unplash" />
-              <div class="des">
-                Photos<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
-                <hr />
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+			<div class="design-list">
+				<ul>
+					<li>
+						<a href="https://www.behance.net/gallery/107930547/Detective-Conan-use-Low-Poly" target="_blank">
+							<img src="./img/magazine-img.png" alt="Conan Low Poly" />
+							<div class="des">
+								Mangazines<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
+								<hr />
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.behance.net/gallery/114571041/Heath-Magazine-Cover-2021" target="_blank"><img
+								src="./img/poster-img.png" alt="Health Poster" />
+							<div class="des">
+								Posters<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
+								<hr />
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/photo-unplash.png"
+								alt="Photo Unplash" />
+							<div class="des">
+								Photos<span class="icon-arrow"><img src="./img/arrow.svg" alt="icon-arrow" /></span>
+								<hr />
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 
-      <div class="only-menu-left">
-        <div class="menu">
-          <a href="#projects">PROJECT</a>
-          <span class="line"></span>
-          <a href="#services">SERVICES</a>
-          <span class="line"></span>
-          <a href="#about-me">ABOUT ME</a>
-        </div>
-      </div>
+			<div class="only-menu-left">
+				<div class="menu">
+					<a href="#projects">PROJECT</a>
+					<span class="line"></span>
+					<a href="#services">SERVICES</a>
+					<span class="line"></span>
+					<a href="#about-me">ABOUT ME</a>
+				</div>
+			</div>
 
-      <div class="scroll-icon">
-        <a href="#landing-pages"><i data-feather="chevrons-down"></i></a>
-      </div>
-    </section>
+			<div class="scroll-icon">
+				<a href="#landing-pages"><i data-feather="chevrons-down"></i></a>
+			</div>
+		</section>
 
-    <!-- Land Pages -->
-    <section id="landing-pages" class="landing-pages">
-        <header class="header-dark">
-            <h6>UI Designer</h6>
-            <a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
-            <div class="website">
-              <a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
-            </div>
-          </header>
+		<!-- Land Pages -->
+		<section id="landing-pages" class="landing-pages">
+			<header class="header-dark">
+				<h6>UI Designer</h6>
+				<a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
+				<div class="website">
+					<a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
+				</div>
+			</header>
 
-          <div class="only-menu-left">
-            <div class="menu on-bg-light">
-              <a href="#projects">PROJECT</a>
-              <span class="line"></span>
-              <a href="#services">SERVICES</a>
-              <span class="line"></span>
-              <a href="#about-me">ABOUT ME</a>
-            </div>
-          </div>
+			<div class="content">
+				<div class="left">
+					<img src="./img/landing-img.png" alt="Landing Pages">
+					<div class="des">
+						<h6>LANDING PAGES</h6>
+						<div> 1 <span class="line on-bg-light"></span> 5 </div>
+					</div>
+				</div>
+				<div class="right">
+					<img src="./img/landing-img.png" alt="Landing Pages 2">
+				</div>
+			</div>
 
-    </section>
+			<div class="title">
+				<h2>
+					Landing <br>
+					<span>Pages</span>
+					<a href="#" target="_blank" class="see-more">SEE MORE <span class="icon-arrow-small"><img
+								src="./img/arrow-small.svg" alt="icon-arrow-small" /></span></a>
+				</h2>
+			</div>
 
-  </div>
+			<div class="only-menu-left">
+				<div class="menu on-bg-light">
+					<a href="#projects">PROJECT</a>
+					<span class="line"></span>
+					<a href="#services">SERVICES</a>
+					<span class="line"></span>
+					<a href="#about-me">ABOUT ME</a>
+				</div>
+			</div>
 
-  <!-- Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+			<div class="scroll-icon">
+				<a href="#photos-branding"><i data-feather="chevrons-down"></i></a>
+			</div>
+		</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script src="./js/main.js"></script>
+		<!-- Photos & Branding -->
+		<section id="photos-branding" class="photos-branding">
+			<header>
+				<h6>UI Designer</h6>
+				<a href="#" class="logo"><span class="name">IRIS</span> NGUYEN</a>
+				<div class="website">
+					<a href="https://irisnguyen.info" target="_blank">Developers</a><span class="line"></span>
+				</div>
+			</header>
 
-  <script>
-    feather.replace();
-  </script>
+			<div class="photo-slide">
+				<h6 class="photography">PHOTOGRAPHY</h6>
+				<div id="splide" class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide"><a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/photos-img.png" alt="Photo Image"></a></li>
+							<li class="splide__slide"><a href="https://www.behance.net/nguyentrantt" target="_blank"><img src="./img/photos-img2.png" alt="Photo Image"></a></li>
+						</ul>
+					</div>
+
+					<div class="splide__arrows p-splide__arrows">
+						<button class="splide__arrow p-splide__arrow splide__arrow--prev p-splide__arrow--prev"
+							aria-controls="example-single-track" disabled="" aria-label="Previous slide"><span
+								class="spi-angle-left"></span>PREV</button>
+						<button class="splide__arrow p-splide__arrow splide__arrow--next p-splide__arrow--next"
+							aria-controls="example-single-track" aria-label="Next slide"><span class="spi-angle-right"></span>
+							NEXT
+						</button>
+					</div>
+				</div>
+				<div class="count"> 1 <span class="line"></span> 5 </div>
+			</div>
+
+			<div class="title">
+				<h2 class="main">Photos-Branding</h2>
+				<h2 class="think">Think</h2>
+				<h2 class="big">Big</h2>
+			</div>
+
+			<div class="only-menu-left">
+				<div class="menu">
+					<a href="#projects">PROJECT</a>
+					<span class="line"></span>
+					<a href="#services">SERVICES</a>
+					<span class="line"></span>
+					<a href="#about-me">ABOUT ME</a>
+				</div>
+			</div>
+
+			<div class="scroll-icon">
+				<a href="#landing-pages"><i data-feather="chevrons-down"></i></a>
+			</div>
+
+			<span class="stamp end">PROJECT FOR STUDY</span>
+
+		</section>
+	</div>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="./js/main.js"></script>
+
+	<script>
+		feather.replace();
+	</script>
+
+	<script>
+		new Splide('#splide', {
+			type: 'fade',
+			rewind: true,
+			autoplay: true,
+		}).mount();
+	</script>
 </body>
 
 </html>

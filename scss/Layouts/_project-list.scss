@@ -20,10 +20,7 @@
 				transition: 1s;
 
 				&:hover {
-					color: white;
-					-webkit-text-fill-color: white;
-					-webkit-text-stroke-width: 1px;
-					-webkit-text-stroke-color: $color-dark-0;
+					@include text-stroke($color-light-0, $color-light-0, 1px, $color-dark-0);
 					animation: zoom-in-text 2s alternate infinite;
 				}
 			}

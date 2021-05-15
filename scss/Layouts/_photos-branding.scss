@@ -1,0 +1,82 @@
+.photos-branding {
+	@include section-style($color-dark-0, $color-light-0, $pd-60);
+	@include d-flex(column, space-between, unset);
+	position: relative;
+
+	.photo-slide {
+		// width: 70%;
+		display: flex;
+		margin: 0 auto;
+		position: relative;
+
+		.photography {
+			@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+			transform: rotate(-90deg);
+			position: absolute;
+			top: 10%;
+			left: -20%;
+		}
+
+		.count {
+			position: absolute;
+			bottom: -5%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		#splide {
+			margin: 0 auto;
+			position: relative;
+
+			.splide__arrows {
+				position: absolute;
+				bottom: 45px;
+				right: -30px;
+				transform: rotate(90deg);
+
+
+				.splide__arrow {
+					background: none;
+					@include text-style('Poppins-Regular', $fs-12, 19px, 3px, uppercase);
+					color: $color-light-0;
+
+					&.splide__arrow--next {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.title {
+
+		h2 {
+			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+			position: absolute;
+
+			&.main {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				white-space: nowrap;
+			}
+
+			&.think,
+			&.big {
+				@include text-stroke(transparent, transparent, 1px, $color-light-0);
+			}
+
+			&.think {
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+
+			&.big {
+				top: 50%;
+				right: 0;
+				transform: translate(20%, -50%);
+			}
+		}
+	}
+}
