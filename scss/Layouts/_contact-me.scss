@@ -1,0 +1,43 @@
+.contact-me {
+	@include section-style($color-dark-0, $color-light-0, $pd-60);
+	@include d-flex(row, space-between, center);
+
+	.left {
+		width: 40%;
+		text-align: right;
+
+		h2 {
+			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+			@include text-stroke(transparent, transparent, 1px, $color-light-0);
+			transform: rotate(-90deg);
+			padding-right: 100px;
+		}
+	}
+
+	.right {
+		width: 60%;
+		@include d-flex(column, space-between, unset);
+
+		.des {
+			@include text-style('RobotoMono-Regular', 22px, 35px, unset, unset);
+			width: 40%;
+			padding: 100px 0;
+		}
+
+		.info {
+			padding: 50px 0;
+
+			h6 {
+				@include text-style('Poppins-Regular', 14px, 23px, 6px, uppercase);
+			}
+
+			.details {
+				@include text-style('Poppins-Regular', 50px, 82px, unset, unset);
+			}
+
+			.social-icon {
+				padding-top: 23px;
+			}
+		}
+	}
+}

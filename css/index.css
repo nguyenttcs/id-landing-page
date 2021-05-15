@@ -122,10 +122,6 @@ header {
     font-family: 'Poppins-Regular';
     font-size: 12px;
     text-transform: uppercase; }
-  header .logo {
-    font-size: 14px; }
-    header .logo .name {
-      color: #F39F1B; }
   header .website {
     text-align: right;
     transition: 1s;
@@ -517,28 +513,109 @@ header {
     z-index: 2; }
     .about-me .content .left {
       margin: 0 auto;
-      text-align: left; }
+      text-align: left;
+      position: relative; }
       .about-me .content .left h6 {
-        transform: rotate(-90deg); }
-      .about-me .content .left .social-icon {
-        text-align: right;
-        padding: 20px 0; }
-        .about-me .content .left .social-icon a:last-child {
-          padding-right: 0; }
-    .about-me .content .right {
-      width: 50%;
-      font-family: "RobotoMono-Regular";
-      font-size: 14px;
-      line-height: 28px;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -10%;
+        top: 10px; }
+    .about-me .content .social-icon {
+      text-align: right;
+      padding: 20px 0; }
+      .about-me .content .social-icon a:last-child {
+        padding-right: 0; }
+  .about-me .right {
+    width: 50%;
+    font-family: "RobotoMono-Regular";
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: unset;
+    text-transform: unset;
+    color: #4A4A4A;
+    padding: 100px 80px 100px 150px; }
+  .about-me .name-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    font-family: "Eczar-Bold";
+    font-size: 80px;
+    line-height: 115px;
+    letter-spacing: unset;
+    text-transform: unset;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1E252C; }
+
+@media screen and (min-width: 1920px) {
+  .about-me .right {
+    padding: 100px 100px 100px 200px; } }
+.contact-me {
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  background: #1E252C;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+  .contact-me .left {
+    width: 40%;
+    text-align: right; }
+    .contact-me .left h2 {
+      font-family: "Eczar-Bold";
+      font-size: 120px;
+      line-height: 105px;
       letter-spacing: unset;
       text-transform: unset;
-      color: #4A4A4A;
-      padding: 100px 100px 100px 200px; }
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      transform: rotate(-90deg);
+      padding-right: 100px; }
+  .contact-me .right {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+    flex-direction: column; }
+    .contact-me .right .des {
+      font-family: "RobotoMono-Regular";
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: unset;
+      text-transform: unset;
+      width: 40%;
+      padding: 100px 0; }
+    .contact-me .right .info {
+      padding: 50px 0; }
+      .contact-me .right .info h6 {
+        font-family: "Poppins-Regular";
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 6px;
+        text-transform: uppercase; }
+      .contact-me .right .info .details {
+        font-family: "Poppins-Regular";
+        font-size: 50px;
+        line-height: 82px;
+        letter-spacing: unset;
+        text-transform: unset; }
+      .contact-me .right .info .social-icon {
+        padding-top: 23px; }
 
 footer {
-  padding: 15px 0;
+  padding: 50px 0;
   text-align: center;
-  background: #EAEAE9; }
+  background: #F0F0F0; }
+  footer .logo {
+    font-size: 40px; }
+  footer .menu {
+    padding: 15px 0; }
 
 /* ==========================================================================
 Icons Style
@@ -661,5 +738,10 @@ Subcribe
       color: #fff; }
     .subscribe .btn-subscribe:focus {
       outline: none; }
+
+.logo {
+  font-size: 14px; }
+  .logo .name {
+    color: #F39F1B; }
 
 /*# sourceMappingURL=index.css.map */
