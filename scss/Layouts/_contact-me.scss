@@ -65,3 +65,45 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.contact-me {
+		@include section-mobile;
+		flex-direction: column;
+		overflow: hidden;
+
+		.left,
+		.right {
+			width: 100%;
+		}
+
+		.left {
+			h2 {
+				transform: none;
+				padding-right: 0;
+				text-align: left;
+				line-height: 80px;
+			}
+		}
+
+		.right {
+			margin-top: 50px;
+
+			.des {
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 414px) {
+		.contact-me {
+			.right {
+				.info {
+					.details {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+	}
+}

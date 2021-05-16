@@ -1,7 +1,7 @@
 header {
 	@include d-flex(row, space-between, unset);
 	z-index: 2;
-	
+
 
 	h6 {
 		font-family: 'Poppins-Regular';
@@ -36,6 +36,14 @@ header {
 				background: $color-dark-0;
 				margin: 5px 0;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	header {
+		h6 {
+			display: none;
 		}
 	}
 }

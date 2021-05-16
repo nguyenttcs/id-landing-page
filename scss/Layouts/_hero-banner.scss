@@ -16,7 +16,7 @@
 			transition: 2s;
 			float: right;
 
-			&:hover img{
+			&:hover img {
 				transform: scale(0.9);
 			}
 		}
@@ -49,11 +49,51 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+// @media screen and (max-width: 768px) {
+// 	.hero-banner {
+// 		.heading-2 {
+// 			font-size: 60px;
+// 			line-height: 60px;
+// 		}
+// 	}
+// }
+
+@media screen and (max-width: 576px) {
 	.hero-banner {
+		padding: 60px 30px;
+		height: auto;
+
 		.heading-2 {
-			font-size: 60px;
-			line-height: 60px;
+			font-size: $fs-52;
+			line-height: $fs-52;
+		}
+
+		.banner-content {
+			flex-direction: column;
+
+			.left,
+			.right {
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
+
+		.body-text {
+			margin-top: 20px;
+			margin-left: 30px;
+
+			br {
+				display: none;
+			}
+		}
+
+		.social-icon,
+		.stamp {
+			display: none;
+		}
+
+		.banner-bottom {
+			justify-content: center;
 		}
 	}
 }

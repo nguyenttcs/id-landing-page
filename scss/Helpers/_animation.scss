@@ -28,6 +28,16 @@
 	}
 }
 
+@keyframes zoom-in-text-mobile {
+	from {
+		font-size: $fs-30;
+	}
+
+	to {
+		font-size: 40px;
+	}
+}
+
 @keyframes icon-move {
 	from {
 		transform: translateY(-15px);

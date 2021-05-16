@@ -11,6 +11,10 @@
 			width: 50%;
 			margin-left: -$pd-60;
 
+			.landing3 {
+				display: none; //only display on mobile
+			}
+
 			.des {
 				@include d-flex(row, space-between, center);
 				padding: 20px 0;
@@ -56,10 +60,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.landing-pages {	
+	.landing-pages {
 		.title {
 			left: 35%;
-	
+
 			h2 {
 				@include text-style('Eczar-Bold', $fs-80, 105px, unset, unset);
 			}
@@ -68,9 +72,74 @@
 }
 
 @media screen and (max-width: 768px) {
-	.landing-pages {	
+	.landing-pages {
 		.title {
 			left: 28%;
+		}
+	}
+}
+
+@media screen and (max-width: 572px) {
+	.landing-pages {
+		padding: 60px 30px;
+
+
+		.content {
+			flex-direction: column;
+
+			.left,
+			.right {
+				width: 100%;
+			}
+
+			.left {
+				margin-left: 0;
+
+				.landing1 {
+					display: none;
+				}
+
+				.landing3 {
+					display: block;
+				}
+
+				.des {
+					h6 {
+						margin-left: 0;
+					}
+				}
+			}
+
+			.right {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+		.title {
+			left: 0;
+
+			h2 {
+				@include text-style('Eczar-Bold', $fs-80, 80px, unset, unset);
+
+				span {
+					@include text-stroke($color-light-0, $color-light-0, 1px, $color-dark-0);
+				}
+
+				a {
+					margin-right: -100px;
+					color: $color-light-0;
+				}
+			}
+
+			.see-more {
+				border-bottom: 1px solid $color-light-0;
+			}
+		}
+
+		.only-menu-left {
+			display: none;
 		}
 	}
 }

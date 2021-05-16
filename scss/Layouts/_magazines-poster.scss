@@ -65,3 +65,20 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.magazines-posters {
+		@include section-mobile;
+
+		.design-list {
+			ul {
+				flex-direction: column;
+
+				li {
+					width: 100%;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}

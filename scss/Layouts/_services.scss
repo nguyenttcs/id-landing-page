@@ -75,3 +75,49 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.services {
+		@include section-mobile;
+
+		.content {
+			flex-direction: column;
+
+			.left {
+				img {
+					width: 100%;
+				}
+			}
+
+			.left,
+			.center {
+				width: 100%;
+			}
+
+			.center {
+				margin-left: 0;
+				margin-top: 50px;
+
+				.position {
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+
+			.right {
+				.social-icon {
+					flex-direction: row;
+
+					a {
+						padding: 20px 10px;
+					}
+				}
+			}
+		}
+
+		.stamp {
+			display: none;
+		}
+	}
+}

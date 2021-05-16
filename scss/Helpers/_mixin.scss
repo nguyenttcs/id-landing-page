@@ -13,6 +13,11 @@
 	color: $color-text;
 }
 
+@mixin section-mobile {
+	padding: 60px 30px;
+	height: auto;
+}
+
 @mixin text-style($f-family, $fs, $lh, $lp, $tt) {
 	font-family: $f-family;
 	font-size: $fs;

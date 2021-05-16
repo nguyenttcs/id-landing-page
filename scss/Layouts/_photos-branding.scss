@@ -92,11 +92,86 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 	.photos-branding {
 		.title {
 			h2 {
 				@include text-style('Eczar-Bold', $fs-60, 105px, unset, unset);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.photos-branding {
+		@include section-mobile;
+
+		.photo-slide {
+			#splide {
+				.splide__slide {
+					max-width: 86% !important
+				}
+			}
+
+			.splide__pagination {
+				display: none
+			}
+
+			.count {
+				transform: translate(-80%, 0);
+			}
+
+			.photography {
+				display: none
+			}
+		}
+
+		.title {
+			h2 {
+				@include text-style('Eczar-Bold', 35px, 105px, unset, unset);
+			}
+		}
+
+		.stamp {
+			display: none;
+		}
+
+		.only-menu-left {
+			padding-top: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.photos-branding {
+		@include section-mobile;
+		overflow: hidden;
+
+		.photo-slide {
+			#splide {
+				.splide__slide {
+					max-width: 78% !important
+				}
+			}
+
+			.splide__pagination {
+				display: none
+			}
+
+			.count {
+				transform: translate(-90%, 0);
+			}
+		}
+
+		.title {
+			h2 {
+				font-size: 45px;
+				line-height: 45px;
+
+				&.main {
+					white-space: normal;
+					text-align: center;
+				}
 			}
 		}
 	}
