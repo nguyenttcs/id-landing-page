@@ -49,15 +49,6 @@
 	}
 }
 
-// @media screen and (max-width: 768px) {
-// 	.hero-banner {
-// 		.heading-2 {
-// 			font-size: 60px;
-// 			line-height: 60px;
-// 		}
-// 	}
-// }
-
 @media screen and (max-width: 576px) {
 	.hero-banner {
 		padding: 60px 30px;
@@ -94,6 +85,15 @@
 
 		.banner-bottom {
 			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.hero-banner {
+		.heading-2 {
+			font-size: 49px;
+			line-height: 49px;
 		}
 	}
 }

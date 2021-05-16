@@ -142,7 +142,7 @@
 	}
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
 	.photos-branding {
 		@include section-mobile;
 		overflow: hidden;
