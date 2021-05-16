@@ -7,7 +7,7 @@
 		text-align: right;
 
 		h2 {
-			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+			@include text-style('Eczar-Bold', $fs-120, 105px, unset, unset);
 			@include text-stroke(transparent, transparent, 1px, $color-light-0);
 			transform: rotate(-90deg);
 			padding-right: 100px;
@@ -37,6 +37,30 @@
 
 			.social-icon {
 				padding-top: 23px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contact-me {
+		.left {
+			h2 {
+				@include text-style('Eczar-Bold', $fs-80, 105px, unset, unset);
+			}
+		}
+
+		.right {
+			.des {
+				@include text-style('RobotoMono-Regular', $fs-18, 35px, unset, unset);
+				width: 70%;
+				padding: 10px 0;
+			}
+
+			.info {
+				.details {
+					@include text-style('Poppins-Regular', $fs-30, $fs-52, unset, unset);
+				}
 			}
 		}
 	}

@@ -102,6 +102,11 @@ a {
     font-size: 52px; }
   to {
     font-size: 80px; } }
+@keyframes zoom-in-text-1024 {
+  from {
+    font-size: 30px; }
+  to {
+    font-size: 52px; } }
 @keyframes icon-move {
   from {
     transform: translateY(-15px); }
@@ -115,7 +120,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: unset;
   flex-direction: row;
   z-index: 2; }
   header h6 {
@@ -188,6 +193,14 @@ header {
     flex-direction: row;
     padding-top: 30px; }
 
+@media screen and (max-width: 1024px) {
+  .hero-banner .heading-2 {
+    font-size: 60px;
+    line-height: 60px; } }
+@media screen and (max-width: 768px) {
+  .hero-banner .heading-2 {
+    font-size: 60px;
+    line-height: 60px; } }
 .project-list {
   width: 100%;
   height: 100vh;
@@ -249,6 +262,19 @@ header {
       .project-list .table-of-content .right img:hover {
         animation: image-zoom 2s linear 1; }
 
+@media screen and (max-width: 1024px) {
+  .project-list .table-of-content .left h3 {
+    font-family: "Eczar-SemiBold";
+    font-size: 30px;
+    line-height: unset;
+    letter-spacing: unset;
+    text-transform: unset; }
+    .project-list .table-of-content .left h3:hover {
+      animation: zoom-in-text-1024 2s alternate infinite; }
+  .project-list .table-of-content .left ul li {
+    padding: 10px 0; }
+  .project-list .table-of-content .left .number {
+    top: 5px; } }
 .magazines-posters {
   width: 100%;
   height: 100vh;
@@ -293,6 +319,15 @@ header {
           visibility: hidden;
           transition: 1s; }
 
+@media screen and (max-width: 768px) {
+  .magazines-posters .design-list ul li .des {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    text-transform: unset; }
+    .magazines-posters .design-list ul li .des .icon-arrow {
+      width: 30px; } }
 .landing-pages {
   width: 100%;
   height: 100vh;
@@ -352,6 +387,18 @@ header {
       display: inline-block;
       border-bottom: 1px solid #1E252C; }
 
+@media screen and (max-width: 1024px) {
+  .landing-pages .title {
+    left: 35%; }
+    .landing-pages .title h2 {
+      font-family: "Eczar-Bold";
+      font-size: 80px;
+      line-height: 105px;
+      letter-spacing: unset;
+      text-transform: unset; } }
+@media screen and (max-width: 768px) {
+  .landing-pages .title {
+    left: 28%; } }
 .photos-branding {
   width: 100%;
   height: 100vh;
@@ -427,6 +474,20 @@ header {
       right: 0;
       transform: translate(20%, -50%); }
 
+@media screen and (max-width: 1024px) {
+  .photos-branding .title h2 {
+    font-family: "Eczar-Bold";
+    font-size: 80px;
+    line-height: 105px;
+    letter-spacing: unset;
+    text-transform: unset; } }
+@media screen and (max-width: 1024px) {
+  .photos-branding .title h2 {
+    font-family: "Eczar-Bold";
+    font-size: 60px;
+    line-height: 105px;
+    letter-spacing: unset;
+    text-transform: unset; } }
 .services {
   width: 100%;
   height: 100vh;
@@ -486,6 +547,16 @@ header {
       .services .content .right .social-icon a {
         padding: 10px 0; }
 
+@media screen and (max-width: 1024px) {
+  .services .content .center .title {
+    font-family: "Eczar-Bold";
+    font-size: 80px;
+    line-height: 105px;
+    letter-spacing: unset;
+    text-transform: unset; } }
+@media screen and (max-width: 768px) {
+  .services .content .center .position {
+    margin-left: 10px; } }
 .about-me {
   width: 100%;
   height: 100vh;
@@ -552,6 +623,22 @@ header {
 @media screen and (min-width: 1920px) {
   .about-me .right {
     padding: 100px 100px 100px 200px; } }
+@media screen and (max-width: 1024px) {
+  .about-me .right {
+    padding: 50px 0 50px 80px; } }
+@media screen and (max-width: 768px) {
+  .about-me .content .left img {
+    width: 80%; }
+  .about-me .content .left .social-icon {
+    margin-right: 70px; }
+  .about-me .name-title {
+    font-family: "Eczar-Bold";
+    font-size: 60px;
+    line-height: 115px;
+    letter-spacing: unset;
+    text-transform: unset; }
+  .about-me .right {
+    padding: 50px 0 50px 50px; } }
 .contact-me {
   width: 100%;
   height: 100vh;
@@ -608,6 +695,27 @@ header {
       .contact-me .right .info .social-icon {
         padding-top: 23px; }
 
+@media screen and (max-width: 1024px) {
+  .contact-me .left h2 {
+    font-family: "Eczar-Bold";
+    font-size: 80px;
+    line-height: 105px;
+    letter-spacing: unset;
+    text-transform: unset; }
+  .contact-me .right .des {
+    font-family: "RobotoMono-Regular";
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: unset;
+    text-transform: unset;
+    width: 70%;
+    padding: 10px 0; }
+  .contact-me .right .info .details {
+    font-family: "Poppins-Regular";
+    font-size: 30px;
+    line-height: 52px;
+    letter-spacing: unset;
+    text-transform: unset; } }
 footer {
   padding: 50px 0;
   text-align: center;
@@ -739,9 +847,43 @@ Subcribe
     .subscribe .btn-subscribe:focus {
       outline: none; }
 
+/* ==========================================================================
+logo
+========================================================================== */
 .logo {
   font-size: 14px; }
   .logo .name {
     color: #F39F1B; }
+
+@media screen and (max-width: 1024px) {
+  .stamp {
+    left: -2%; }
+
+  .subscribe h3 {
+    font-family: "Eczar-Bold";
+    font-size: 52px;
+    line-height: 142px;
+    letter-spacing: unset;
+    text-transform: unset; } }
+@media screen and (max-width: 768px) {
+  .stamp {
+    top: 60%; }
+
+  .menu a {
+    font-family: "Poppins-Regular";
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  .menu .line {
+    width: 25px;
+    margin: 3px 0; }
+
+  .subscribe h3 {
+    font-family: "Eczar-Bold";
+    font-size: 30px;
+    line-height: 142px;
+    letter-spacing: unset;
+    text-transform: unset; } }
 
 /*# sourceMappingURL=index.css.map */

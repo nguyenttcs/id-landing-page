@@ -52,7 +52,7 @@
 
 	.title {
 		h2 {
-			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+			@include text-style('Eczar-Bold', $fs-120, 105px, unset, unset);
 			position: absolute;
 
 			&.main {
@@ -77,6 +77,26 @@
 				top: 50%;
 				right: 0;
 				transform: translate(20%, -50%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.photos-branding {
+		.title {
+			h2 {
+				@include text-style('Eczar-Bold', $fs-80, 105px, unset, unset);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.photos-branding {
+		.title {
+			h2 {
+				@include text-style('Eczar-Bold', $fs-60, 105px, unset, unset);
 			}
 		}
 	}

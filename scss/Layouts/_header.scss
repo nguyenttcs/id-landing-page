@@ -1,5 +1,5 @@
 header {
-	@include d-flex(row, space-between, center);
+	@include d-flex(row, space-between, unset);
 	z-index: 2;
 	
 

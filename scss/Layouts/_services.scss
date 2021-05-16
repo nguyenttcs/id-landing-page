@@ -21,7 +21,7 @@
 			margin-left: -15%;
 
 			.title {
-				@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+				@include text-style('Eczar-Bold', $fs-120, 105px, unset, unset);
 				@include text-stroke(transparent, transparent, 1px, $color-light-0);
 			}
 
@@ -43,8 +43,33 @@
 		.right {
 			.social-icon {
 				@include d-flex(column, space-between, unset);
+
 				a {
 					padding: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.services {
+		.content {
+			.center {
+				.title {
+					@include text-style('Eczar-Bold', $fs-80, 105px, unset, unset);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.services {
+		.content {
+			.center {
+				.position {
+					margin-left: 10px;
 				}
 			}
 		}

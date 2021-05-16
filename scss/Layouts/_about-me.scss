@@ -66,3 +66,35 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.about-me {
+		.right {
+			padding: 50px 0 50px 80px;
+		}
+	} 
+}
+
+@media screen and (max-width: 768px) {
+	.about-me {
+		.content {
+			.left {
+				img {
+					width: 80%;
+				}
+
+				.social-icon {
+					margin-right: 70px;
+				}
+			}
+		}
+
+		.name-title {
+			@include text-style('Eczar-Bold', $fs-60, 115px, unset, unset);
+		}
+
+		.right {
+			padding: 50px 0 50px 50px;
+		}
+	} 
+}

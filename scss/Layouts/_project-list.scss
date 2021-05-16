@@ -59,3 +59,29 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.project-list {
+		.table-of-content {
+			.left {
+				h3 {
+					@include text-style('Eczar-SemiBold', $fs-30, unset, unset, unset);
+
+					&:hover {
+						animation: zoom-in-text-1024 2s alternate infinite;
+					}
+				}
+
+				ul {
+					li {
+						padding: 10px 0;
+					}
+				}
+
+				.number {
+					top: 5px;
+				}
+			}
+		}
+	}
+}

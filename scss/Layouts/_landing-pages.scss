@@ -36,7 +36,7 @@
 		left: 40%;
 
 		h2 {
-			@include text-style('Eczar-Bold', 120px, 105px, unset, unset);
+			@include text-style('Eczar-Bold', $fs-120, 105px, unset, unset);
 
 			span {
 				@include text-stroke(transparent, transparent, 1px, $color-dark-0);
@@ -51,6 +51,26 @@
 		.see-more {
 			display: inline-block;
 			border-bottom: 1px solid $color-dark-0;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.landing-pages {	
+		.title {
+			left: 35%;
+	
+			h2 {
+				@include text-style('Eczar-Bold', $fs-80, 105px, unset, unset);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.landing-pages {	
+		.title {
+			left: 28%;
 		}
 	}
 }

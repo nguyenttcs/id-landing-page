@@ -141,13 +141,48 @@ Subcribe
 	}
 }
 
-//logo
-
-
+/* ==========================================================================
+logo
+========================================================================== */
 .logo {
 	font-size: $fs-14;
 
 	.name {
 		color: $color-orange-0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.stamp {
+		left: -2%;
+	}
+
+	.subscribe {
+		h3 {
+			@include text-style('Eczar-Bold', $fs-52, 142px, unset, unset);
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.stamp {
+		top: 60%;
+	}
+
+	.menu {
+		a {
+			@include text-style('Poppins-Regular', $fs-10, 19px, 3px, uppercase);
+		}
+
+		.line {
+			width: 25px;
+			margin: 3px 0;
+		}
+	} 
+
+	.subscribe {
+		h3 {
+			@include text-style('Eczar-Bold', $fs-30, 142px, unset, unset);
+		}
 	}
 }

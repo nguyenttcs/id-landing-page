@@ -24,7 +24,7 @@
 
 	.heading-2 {
 		font-family: 'Eczar-Bold';
-		font-size: 80px;
+		font-size: $fs-80;
 		line-height: 80px;
 	}
 
@@ -37,5 +37,23 @@
 	.banner-bottom {
 		@include d-flex(row, space-between, center);
 		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.hero-banner {
+		.heading-2 {
+			font-size: 60px;
+			line-height: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-banner {
+		.heading-2 {
+			font-size: 60px;
+			line-height: 60px;
+		}
 	}
 }

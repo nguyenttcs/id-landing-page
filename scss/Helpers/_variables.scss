@@ -5,11 +5,15 @@ $color-orange-0:#F39F1B;
 $color-grey-0:#F0F0F0;
 
 // variable font-size
+$fs-10: 10px;
 $fs-12: 12px; //default
 $fs-14: 14px;
 $fs-18: 18px;
+$fs-30: 30px;
 $fs-52: 52px;
+$fs-60: 60px;
 $fs-80: 80px;
+$fs-120: 120px;
 
 //variable margin
 $mg-0: 2px;
@@ -35,8 +39,8 @@ $fw-bold: bold;
 
 
 //break points
-$breakpoints:('extra-large': 1200px,
-	'large' : 992px,
-	'medium' : 768px,
-	'small' : 576px,
-)
+// $breakpoints:('extra-large': 1200px,
+// 	'large' : 992px,
+// 	'medium' : 768px,
+// 	'small' : 576px,
+// ) 
